@@ -1,0 +1,15 @@
+.character {
+    height: 100%;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head, .tops, .bottoms {
+    width: auto;
+    height: 300px;
+    margin: 10px;
+}
+

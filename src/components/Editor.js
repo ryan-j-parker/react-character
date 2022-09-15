@@ -1,11 +1,11 @@
 import React from 'react';
 import './Editor.css';
 
-export default function Editor() {
+export default function Editor({ head, setHead }) {
   return (
     <div className="editor">Editor
       <div className="">Select a head
-        <select name="head">
+        <select name="head" value={head} onChange={(e) => setHead(e.target.value)}>
           <option value="deer">deer</option>
           <option value="frog">frog</option>
           <option value="wombat">wombat</option>
@@ -25,6 +25,6 @@ export default function Editor() {
           <option value="leg">leg</option>
         </select>
       </div>
-    </div>
+    </div >
   );
 }

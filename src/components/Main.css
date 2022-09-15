@@ -3,5 +3,11 @@
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 'editor preview';
     gap: 20px;
-    height: calc(100vh - 4rem);
+    height: 100vh;
+}
+
+main {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
