@@ -1,0 +1,10 @@
+.editor {
+    grid-area: 'editor';
+    height: 90%;
+    width: calc(100% - 1rem);
+    margin: 20px;
+    border: 4px dashed lightcoral;
+    font-family: monospace;
+    font-size: 1.2rem;
+    padding-top: 5px;
+}

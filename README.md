@@ -51,3 +51,35 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 ## Additional considerations
 - Is any of your state redundant? For example, if you're tracking `wins`, `losses`, and `total`, you can probably get rid of `losses` state, and calculate it as `total - wins`.
 - Where should each piece of state live? How are you going to get data from where it lives to where it needs to be?
+
+## react-character-designer
+React Character Designer
+Learning Objectives
+Use attributes in parent components to pass data down to child components as props
+Use useState hook to create and update simple (primitive) component state
+Use arrow function properties to define event handlers
+Destructure props and state in functional components
+Style components using CSS imports
+Demo
+See demo here
+
+Getting Started
+Create a new React app using the react template
+
+Acceptance Criteria
+Users should be able to update the characters head, torso and legs using select menus
+Users should be able to add catchphrases for their character which get listed on the page
+Your app should have at least 4 different components and should share state by passing props
+You should upload a component diagram showing how you planned your component architecture
+Rubric
+Looking for… Points
+A component diagram showing planned component architecture 2
+At least 4 different components 2
+Shared state between different components 2
+Changing the head dropdown should change the Character’s head image 2
+Changing the torso dropdown should change the Character’s torso image 2
+Changing the legs dropdown should change the Character’s leg image 2
+State showing the number of times each attribute was changed 2
+Adding a catchphrase properly modifies a state array 2
+Catchphrases are displayed on the page 2
+Each component is styled using CSS imports 2

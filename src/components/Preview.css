@@ -1,0 +1,10 @@
+.preview {
+    grid-area: 'preview';
+    height: 90%;
+    width: calc(100% - 3rem);
+    margin: 20px;
+    border: 4px dashed lightblue;
+    font-family: monospace;
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
