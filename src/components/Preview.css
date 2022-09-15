@@ -13,10 +13,26 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
 }
 
 .head {
-    height: 300px;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tops {
+    height: auto;
     width: auto;
     display: flex;
     align-items: center;

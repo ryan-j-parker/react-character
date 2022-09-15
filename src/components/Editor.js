@@ -1,7 +1,7 @@
 import React from 'react';
 import './Editor.css';
 
-export default function Editor({ head, setHead }) {
+export default function Editor({ head, setHead, tops, setTops }) {
   return (
     <div className="editor">Editor
       <div className="">Select a head
@@ -12,7 +12,7 @@ export default function Editor({ head, setHead }) {
         </select>
       </div>
       <div className="">Select a top
-        <select name="tops">
+        <select name="tops" value={tops} onChange={(e) => setTops(e.target.value)}>
           <option value="jacket">jacket</option>
           <option value="armor">armor</option>
           <option value="jersey">jersey</option>
