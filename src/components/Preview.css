@@ -1,6 +1,7 @@
 .preview {
     grid-area: 'preview';
-    height: 90%;
+    height: calc(90% - 2rem);
+    min-width: 400px;
     width: calc(100% - 3rem);
     margin: 20px;
     border: 4px dashed lightblue;
@@ -19,22 +20,49 @@
 }
 
 .character {
-    display: flex;
-    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 100px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "head"
+        "tops"
+        "bottoms";
+    height: 600px;
 }
 
 .head {
+    /* object-fit: contain; */
+    grid-area: "head";
+    margin: -80px auto;
+    width: 200px;
     height: auto;
-    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 
 .tops {
+    /* object-fit: contain; */
+    grid-area: "tops";
     height: auto;
-    width: auto;
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: -140px auto;
+    z-index: 1;
+}
+
+.bottoms {
+    /* object-fit: contain; */
+    grid-area: "head";
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -200px auto;
+    z-index: 0
 }
