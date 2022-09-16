@@ -9,9 +9,9 @@ import background from '../../src/background.jpg';
 
 export default function Main() {
 
-  const [head, setHead] = useState([]);
-  const [tops, setTops] = useState([]);
-  const [bottoms, setBottoms] = useState([]);
+  const [head, setHead] = useState(['deer']);
+  const [tops, setTops] = useState(['jacket']);
+  const [bottoms, setBottoms] = useState(['pajamas']);
   const [headCounter, setHeadCounter] = useState(0);
   const [topsCounter, setTopsCounter] = useState(0);
   const [bottomsCounter, setBottomsCounter] = useState(0);
