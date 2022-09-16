@@ -12,11 +12,14 @@ export default function Main() {
   const [head, setHead] = useState([]);
   const [tops, setTops] = useState([]);
   const [bottoms, setBottoms] = useState([]);
+  const [headCounter, setHeadCounter] = useState(0);
+  const [topsCounter, setTopsCounter] = useState(0);
+  const [bottomsCounter, setBottomsCounter] = useState(0);
 
   return (
     <main style={{ backgroundImage: `url(${background})` }} >
       <div className="main">
-        <Editor head={head} setHead={setHead} tops={tops} setTops={setTops} bottoms={bottoms} setBottoms={setBottoms} />
+        <Editor head={head} setHead={setHead} tops={tops} setTops={setTops} bottoms={bottoms} setBottoms={setBottoms} headCounter={headCounter} setHeadCounter={setHeadCounter} topsCounter={topsCounter} setTopsCounter={setTopsCounter} bottomsCounter={bottomsCounter} setBottomsCounter={setBottomsCounter} />
         <Preview head={head} tops={tops} bottoms={bottoms} />
       </div>
     </main>
