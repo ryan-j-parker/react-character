@@ -29,8 +29,9 @@ export default function Editor({ head, setHead, tops, setTops, bottoms, setBotto
         <p>You have changed your head {headCounter} times, your top {topsCounter} times, and your bottoms {bottomsCounter} times</p>
       </div>
       <div className="catchphrase">
-        <textarea type="text" name="catchphrase" value={catchphrase} onChange={(e) => setCatchphrase(e.target.value)} />
-        <button onClick={() => { return setCatchphraseArray([...catchphraseArray, catchphrase]), setCatchphrase(''); }}>Add a catchphrase</button>
+        <label className="phrase">Add a catchphrase!</label>
+        <input className="phrase" type="text" name="catchphrase" value={catchphrase} onChange={(e) => setCatchphrase(e.target.value)} />
+        <button className="phrase" onClick={() => { return setCatchphraseArray([...catchphraseArray, catchphrase]), setCatchphrase(''); }}>Add a catchphrase</button>
       </div>
       <div className="catchphrase-display">{catchphraseArray.map((catchphraseItem) => (<p key={catchphraseItem}>{catchphraseItem}</p>)) }</div>
     </div>

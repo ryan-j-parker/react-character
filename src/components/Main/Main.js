@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 
-import Editor from './Editor';
-import Preview from './Preview';
+import Editor from '../Editor/Editor';
+import Preview from '../Preview/Preview';
 
 import './Main.css';
-import background from '../../src/background.jpg';
+import background from '../../../src/background.jpg';
 
 export default function Main() {
 

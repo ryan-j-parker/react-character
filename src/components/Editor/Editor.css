@@ -7,7 +7,6 @@
     height: calc(90% - 2rem);
     min-width: 200px;
     width: calc(100% - 1rem);
-    margin: 20px;
     border: 4px dashed lightcoral;
     font-family: monospace;
     color: white;
@@ -15,7 +14,7 @@
     font-weight: 600;
     margin: 20px;
     padding-top: 15px;
-    background-image: url('../../public/brick.jpg');
+    background-image: url('../../../public/brick.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,10 +32,20 @@
     margin: 0 10px;
 }
 
+.catchphrase {
+    display: flex;
+    flex-direction: column;
+}
+
+.phrase {
+    margin: 5px 0;
+}
+
 .catchphrase-display {
     margin-top: 10px;
-    height: 200px;
+    height: 320px;
     width: 200px;
     background-color: grey;
     border: 2px dashed yellow;
+    padding: -20px;
 }
