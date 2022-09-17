@@ -5,7 +5,9 @@ header {
     justify-content: flex-start;
     margin: 0 auto;
     padding-left: 15px;
-    color: lightgoldenrodyellow;
+    color: rgb(104, 104, 104);
+    font-weight: 700;
     background-color: lightgreen;
     /* text-align: left; */
+    font-size: 1.4rem;
 }

@@ -1,11 +1,12 @@
 footer {
-    height: 3rem;
+    height: 2.4rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin: auto;
+    margin: 0;
     padding-right: 15px;
-    color: lightgoldenrodyellow;
+    color: rgb(104, 104, 104);
+    font-weight: 700;
     background-color: lightgreen;
-    margin: 0 auto;
+    font-size: 1.2rem;
 }

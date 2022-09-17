@@ -33,7 +33,7 @@ export default function Editor({ head, setHead, tops, setTops, bottoms, setBotto
         <input className="phrase" type="text" name="catchphrase" value={catchphrase} onChange={(e) => setCatchphrase(e.target.value)} />
         <button className="phrase" onClick={() => { return setCatchphraseArray([...catchphraseArray, catchphrase]), setCatchphrase(''); }}>Add a catchphrase</button>
       </div>
-      <div className="catchphrase-display">{catchphraseArray.map((catchphraseItem) => (<p key={catchphraseItem}>{catchphraseItem}</p>)) }</div>
+      <div className="catchphrase-display">Catchphrases: {catchphraseArray.map((catchphraseItem) => (<p key={catchphraseItem}>{catchphraseItem}</p>)) }</div>
     </div>
   );
 }

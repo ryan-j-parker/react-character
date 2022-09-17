@@ -3,7 +3,9 @@
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 'editor preview';
     gap: 20px;
-    height: 90vh;
+    height: calc(100vh - 5.4rem);
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 main {
