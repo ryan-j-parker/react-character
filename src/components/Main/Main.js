@@ -21,7 +21,23 @@ export default function Main() {
   return (
     <main style={{ backgroundImage: `url(${background})` }} >
       <div className="main">
-        <Editor head={head} setHead={setHead} tops={tops} setTops={setTops} bottoms={bottoms} setBottoms={setBottoms} headCounter={headCounter} setHeadCounter={setHeadCounter} topsCounter={topsCounter} setTopsCounter={setTopsCounter} bottomsCounter={bottomsCounter} setBottomsCounter={setBottomsCounter} catchphrase={catchphrase} setCatchphrase={setCatchphrase} catchphraseArray={catchphraseArray} setCatchphraseArray={setCatchphraseArray} />
+        <Editor
+          head={head}
+          setHead={setHead}
+          tops={tops}
+          setTops={setTops}
+          bottoms={bottoms}
+          setBottoms={setBottoms}
+          headCounter={headCounter}
+          setHeadCounter={setHeadCounter}
+          topsCounter={topsCounter}
+          setTopsCounter={setTopsCounter}
+          bottomsCounter={bottomsCounter}
+          setBottomsCounter={setBottomsCounter}
+          catchphrase={catchphrase}
+          setCatchphrase={setCatchphrase}
+          catchphraseArray={catchphraseArray}
+          setCatchphraseArray={setCatchphraseArray} />
         <Preview head={head} tops={tops} bottoms={bottoms} />
       </div>
     </main>
